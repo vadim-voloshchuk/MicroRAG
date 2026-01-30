@@ -1,0 +1,188 @@
+# RAG Micro - Unified Configuration
+# Version: 2.0
+# Date: 2026-01-14
+
+seed: 42  # Фиксированный seed для воспроизводимости
+
+# =============================================================================
+# DATA PATHS
+# =============================================================================
+data:
+  corpus_clean: "data/corpus_clean"      # Чистые тексты
+  corpus_noisy: "data/corpus_noisy"      # Тексты с OCR-шумом
+  qa_set: "data/benchmark/qa.csv"        # Набор вопросов для оценки (200+)
+  index_root: "data/index"               # Корень для индексов
+  raw_pdf: "data/raw"                    # Исходные PDF
+
+# =============================================================================
+# CHUNKING STRATEGIES
+# =============================================================================
+chunking:
+  strategy: "sentence_aware"  # fixed_tokens | sentence_aware | section_aware
+  chunk_size: 512             # Размер чанка в токенах (или символах для fixed)
+  chunk_overlap: 128          # Перекрытие
+  min_chunk_size: 100         # Минимальный размер чанка
+
+  # Параметры для section_aware
+  section_markers:
+    - "^\\d+\\.\\s+"           # 1. Section
+    - "^[A-Z][A-Z\\s]+$"       # ALL CAPS headers
+    - "^Chapter\\s+\\d+"       # Chapter N
+    - "^Table\\s+\\d+"         # Table N
+    - "^Figure\\s+\\d+"        # Figure N
+
+# =============================================================================
+# TABLE EXTRACTION
+# =============================================================================
+tables:
+  enabled: true
+  format: "markdown"          # markdown | key_value | raw
+  context_sentences: 2        # Сколько предложений контекста добавлять к таблице
+  max_table_tokens: 1024      # Максимальный размер таблицы в токенах
+  source_type: "table"        # Метка для чанков-таблиц
+
+# =============================================================================
+# EMBEDDINGS (мультиязычные для RU вопросов + EN даташитов)
+# =============================================================================
+embeddings:
+  default: "multilingual-e5-base"  # Рекомендуется для RU+EN
+  models:
+    # Мультиязычные (рекомендуемые для RU вопросов + EN документов)
+    bge-m3:
+      name: "BAAI/bge-m3"
+      dim: 1024
+      description: "SOTA мультиязычная, 100+ языков, лучший выбор"
+    multilingual-e5-base:
+      name: "intfloat/multilingual-e5-base"
+      dim: 768
+      description: "Мультиязычная E5, хороший баланс для RU+EN"
+    multilingual-e5-large:
+      name: "intfloat/multilingual-e5-large"
+      dim: 1024
+      description: "Лучшее качество, но медленнее"
+    multilingual-minilm:
+      name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+      dim: 384
+      description: "Быстрая мультиязычная, для CPU"
+    labse:
+      name: "sentence-transformers/LaBSE"
+      dim: 768
+      description: "Language-agnostic BERT от Google"
+    # Английские (baseline для сравнения)
+    minilm:
+      name: "sentence-transformers/all-MiniLM-L6-v2"
+      dim: 384
+      description: "Англ. baseline, быстрая"
+
+# =============================================================================
+# RETRIEVAL
+# =============================================================================
+retrieval:
+  default_k: 5                # Количество результатов по умолчанию
+
+  bm25:
+    enabled: true
+    analyzer: "stemming"      # stemming | simple
+
+  dense:
+    enabled: true
+    index_type: "flat"        # flat | ivf | hnsw
+
+  hybrid:
+    enabled: true
+    alpha: 0.5                # Вес BM25: 0.0 = только dense, 1.0 = только BM25
+    normalization: "minmax"   # minmax | zscore | none
+
+# =============================================================================
+# RERANKING
+# =============================================================================
+reranking:
+  enabled: true
+  model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  top_k_rerank: 20            # Сколько кандидатов переранжировать
+  final_k: 5                  # Сколько вернуть после rerank
+
+# =============================================================================
+# CONFIDENCE / ABSTAIN
+# =============================================================================
+confidence:
+  enabled: true
+  min_score_threshold: 0.3    # Минимальный score для уверенного ответа
+  abstain_message: "Недостаточно информации для ответа. Найденные источники:"
+
+# =============================================================================
+# HALLUCINATION DETECTION
+# =============================================================================
+hallucination:
+  enabled: true
+  min_support_ratio: 0.3      # Минимальная доля слов, поддержанных источниками
+  require_citations: true     # Требовать цитаты вида (Doc, стр. N)
+
+# =============================================================================
+# EVALUATION
+# =============================================================================
+evaluation:
+  retrieval_metrics:
+    - "recall@1"
+    - "recall@5"
+    - "recall@10"
+    - "mrr@5"
+    - "mrr@10"
+    - "ndcg@5"
+    - "ndcg@10"
+
+  qa_metrics:
+    - "exact_match"
+    - "f1"
+    - "support_ratio"
+    - "hallucination_rate"
+
+  levels:
+    - "chunk"                 # На уровне чанков
+    - "page"                  # На уровне страниц
+    - "document"              # На уровне документов
+
+  bootstrap:
+    enabled: true
+    n_samples: 1000
+    confidence_level: 0.95
+
+# =============================================================================
+# NOISE ANALYSIS
+# =============================================================================
+noise:
+  enabled: true
+  metrics:
+    - "cer"                   # Character Error Rate
+    - "wer"                   # Word Error Rate
+  buckets:                    # Диапазоны для группировки результатов
+    - [0.0, 0.05]
+    - [0.05, 0.10]
+    - [0.10, 0.20]
+    - [0.20, 1.0]
+
+# =============================================================================
+# LLM CONFIGURATION
+# =============================================================================
+llm:
+  backend: "openai"           # openai | ollama | llama_cpp | stub
+
+  openai:
+    model: "openai/gpt-4o"
+    temperature: 0.1
+    max_tokens: 500
+
+  system_prompt: |
+    Ты — инженер по микроконтроллерам. Отвечай строго по источникам.
+    Каждое утверждение должно содержать ссылку на источник в формате (Документ, стр. N).
+    Если точного ответа нет в источниках, скажи об этом и укажи, какие разделы могут быть релевантны.
+
+# =============================================================================
+# OUTPUT / ARTIFACTS
+# =============================================================================
+output:
+  index_dir: "indexes/{method}/{version}"
+  results_dir: "results"
+  export_formats:
+    - "csv"
+    - "jsonl"

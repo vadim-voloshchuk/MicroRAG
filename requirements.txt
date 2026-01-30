@@ -1,0 +1,38 @@
+# RAG Micro v2.0 Dependencies
+# ============================
+
+# PDF Processing
+pymupdf>=1.24.0
+pdfplumber>=0.11.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# Search & Indexing
+whoosh>=2.7.4
+faiss-cpu>=1.8.0
+
+# ML / Embeddings
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+torch>=2.0.0
+sentence-transformers>=3.0.0
+
+# LLM Backends
+openai>=1.35.7
+# ollama>=0.3.0  # Optional: для локальных моделей
+# llama-cpp-python>=0.2.84  # Optional: для GGUF моделей
+
+# Utilities
+tqdm>=4.66.0
+python-dotenv>=1.0.1
+rapidfuzz>=3.9.0
+tabulate>=0.9.0
+textdistance>=4.6.2
+pyyaml>=6.0.0
+
+# CLI & API
+typer>=0.12.3
+pydantic>=2.6.0
+fastapi>=0.111.0
+uvicorn>=0.30.0

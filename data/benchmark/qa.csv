@@ -1,0 +1,251 @@
+question,answer,evidence_doc,evidence_page,category,difficulty
+Какая максимальная частота CPU у ESP32-WROOM-32?,До 240 МГц (dual-core Xtensa LX6),esp32-wroom-32_datasheet_en,1,cpu,easy
+Какой объём встроенной флеш-памяти у ESP32-WROOM-32?,4 МБ (MB),esp32-wroom-32_datasheet_en,6,memory,easy
+Какой диапазон рабочего напряжения питания у ESP32-WROOM-32?,3.0V ~ 3.6V,esp32-wroom-32_datasheet_en,6,power,easy
+Какой температурный диапазон работы ESP32-WROOM-32?,-40°C ~ +85°C,esp32-wroom-32_datasheet_en,6,thermal,easy
+Какие интерфейсы поддерживает ESP32-WROOM-32?,"SD card, UART, SPI, SDIO, I2C, LED PWM, Motor PWM, I2S, IR, pulse counter, GPIO, capacitive touch sensor, ADC, DAC, TWAI (CAN 2.0)",esp32-wroom-32_datasheet_en,6,interfaces,medium
+Какова частота встроенного кристалла в ESP32-WROOM-32?,40 МГц,esp32-wroom-32_datasheet_en,6,clock,easy
+Какой размер корпуса ESP32-WROOM-32?,18mm × 25.5mm × 3.10mm,esp32-wroom-32_datasheet_en,6,package,easy
+Какой средний рабочий ток ESP32-WROOM-32?,Около 80 мА,esp32-wroom-32_datasheet_en,6,power,medium
+Какие протоколы Wi-Fi поддерживает ESP32-WROOM-32?,"802.11 b/g/n (до 150 Mbps), A-MPDU и A-MSDU агрегация",esp32-wroom-32_datasheet_en,6,wifi,medium
+Какой диапазон частот Wi-Fi у ESP32-WROOM-32?,2412~2484 МГц,esp32-wroom-32_datasheet_en,6,wifi,easy
+Какая версия Bluetooth поддерживается ESP32-WROOM-32?,Bluetooth v4.2 BR/EDR и Bluetooth LE,esp32-wroom-32_datasheet_en,6,bluetooth,easy
+Какая чувствительность Bluetooth приёмника у ESP32?,-97 dBm,esp32-wroom-32_datasheet_en,6,bluetooth,hard
+Какие аудио кодеки поддерживает Bluetooth в ESP32?,CVSD и SBC,esp32-wroom-32_datasheet_en,6,audio,medium
+Какой минимальный ток должен обеспечивать источник питания для ESP32-WROOM-32?,500 мА,esp32-wroom-32_datasheet_en,6,power,medium
+Какой уровень чувствительности к влажности (MSL) у ESP32-WROOM-32?,Level 3,esp32-wroom-32_datasheet_en,7,storage,hard
+Какое ядро процессора используется в STM32F407?,ARM Cortex-M4 с FPU,stm32f407vg,1,cpu,easy
+Какая максимальная частота работы STM32F407?,До 168 МГц,stm32f407vg,1,cpu,easy
+Какой объём Flash памяти у STM32F407VG?,До 1 МБ,stm32f407vg,1,memory,easy
+Какой объём SRAM у STM32F407?,"До 192+4 КБ, включая 64 КБ CCM",stm32f407vg,1,memory,medium
+Сколько таймеров в STM32F407?,До 17 таймеров: 12 шестнадцатибитных и 2 тридцатидвухбитных,stm32f407vg,1,peripherals,medium
+Какое количество АЦП в STM32F407?,"3 x 12-бит АЦП, до 2.4 MSPS",stm32f407vg,1,adc,medium
+Какой диапазон напряжения питания STM32F407?,1.8V ~ 3.6V,stm32f407vg,1,power,easy
+Поддерживает ли STM32F407 Ethernet?,"Да, 10/100 Ethernet MAC с IEEE 1588v2",stm32f407vg,1,interfaces,medium
+Какие интерфейсы USB поддерживает STM32F407?,USB 2.0 full-speed и high-speed device/host/OTG с on-chip PHY,stm32f407vg,1,usb,medium
+Сколько интерфейсов I2C в STM32F407?,До 3 I2C интерфейсов (SMBus/PMBus),stm32f407vg,1,interfaces,easy
+Сколько USART/UART в STM32F407?,До 4 USART / 2 UART (10.5 Mbit/s),stm32f407vg,1,interfaces,medium
+Сколько каналов DMA в STM32F407?,16-канальный DMA контроллер,stm32f407vg,1,dma,medium
+Какой производительности достигает STM32F407?,210 DMIPS / 1.25 DMIPS/MHz (Dhrystone 2.1),stm32f407vg,1,performance,hard
+Поддерживает ли STM32F407 DSP инструкции?,"Да, полная поддержка DSP инструкций",stm32f407vg,1,cpu,medium
+Какие режимы пониженного энергопотребления есть у STM32F407?,"Sleep, Stop и Standby",stm32f407vg,1,power,medium
+Сколько каналов CAN в STM32F407?,2 интерфейса CAN (2.0B Active),stm32f407vg,1,interfaces,easy
+Какой интерфейс SDIO у STM32F407?,SDIO интерфейс для SD карт,stm32f407vg,1,interfaces,easy
+Есть ли у STM32F407 камерный интерфейс?,"Да, 8-14 бит параллельный интерфейс камеры (DCMI) до 54 Mbytes/s",stm32f407vg,1,interfaces,medium
+Какой генератор случайных чисел есть в STM32F407?,True Random Number Generator (TRNG),stm32f407vg,1,security,medium
+Какой размер OTP памяти в STM32F407?,512 байт OTP памяти,stm32f407vg,1,memory,hard
+Какая точность RTC в STM32F407?,Субсекундная точность с аппаратным календарём,stm32f407vg,1,rtc,medium
+Сколько GPIO пинов у STM32F407?,До 140 I/O портов с возможностью прерывания,stm32f407vg,1,gpio,medium
+Какая максимальная скорость GPIO у STM32F407?,До 84 МГц для fast I/Os,stm32f407vg,1,gpio,hard
+Есть ли у STM32F407 5V-tolerant пины?,"Да, до 138 5V-tolerant I/Os",stm32f407vg,1,gpio,medium
+Какой CRC блок есть в STM32F407?,CRC calculation unit,stm32f407vg,1,peripherals,easy
+Какие DAC есть в STM32F407?,2 x 12-bit DAC,stm32f407vg,1,dac,easy
+Какой уникальный идентификатор есть у STM32F407?,96-bit unique ID,stm32f407vg,1,security,medium
+Какое ядро используется в LPC1769?,ARM Cortex-M3,LPC1769_68_67_66_65_64_63,1,cpu,easy
+Какая максимальная частота CPU у LPC1769?,До 120 МГц,LPC1769_68_67_66_65_64_63,1,cpu,easy
+Какая максимальная частота CPU у LPC1768?,До 100 МГц,LPC1769_68_67_66_65_64_63,1,cpu,easy
+Какой объём Flash памяти у LPC1769?,До 512 КБ,LPC1769_68_67_66_65_64_63,1,memory,easy
+Какой объём SRAM у LPC1769?,До 64 КБ (32KB CPU SRAM + 2x16KB AHB SRAM),LPC1769_68_67_66_65_64_63,1,memory,medium
+Сколько каналов DMA в LPC1769?,8-канальный General Purpose DMA контроллер,LPC1769_68_67_66_65_64_63,2,dma,medium
+Какие UART интерфейсы у LPC1769?,"4 UART с fractional baud rate, FIFO и DMA support",LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Сколько каналов CAN у LPC1769?,2 канала CAN 2.0B,LPC1769_68_67_66_65_64_63,2,interfaces,easy
+Какой разрядности ADC у LPC1769?,"12-бит ADC с 8 входами, до 200 kSPS",LPC1769_68_67_66_65_64_63,2,adc,medium
+Какой разрядности DAC у LPC1769?,10-бит DAC с DMA support,LPC1769_68_67_66_65_64_63,2,dac,medium
+Сколько таймеров общего назначения в LPC1769?,4 таймера/счётчика с 8 capture и 10 compare выходами,LPC1769_68_67_66_65_64_63,2,timers,medium
+Есть ли у LPC1769 Motor Control PWM?,"Да, один motor control PWM для трёхфазного управления",LPC1769_68_67_66_65_64_63,2,pwm,medium
+Есть ли у LPC1769 Quadrature Encoder?,"Да, Quadrature Encoder Interface",LPC1769_68_67_66_65_64_63,2,peripherals,medium
+Поддерживает ли LPC1769 Ethernet?,"Да, Ethernet MAC с RMII интерфейсом и dedicated DMA",LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Какой USB интерфейс у LPC1769?,USB 2.0 full-speed Device/Host/OTG с on-chip PHY,LPC1769_68_67_66_65_64_63,2,usb,medium
+Сколько I2C интерфейсов у LPC1769?,"3 I2C интерфейса, один с Fast mode plus до 1 Mbit/s",LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Какой I2S интерфейс есть у LPC1769?,I2S интерфейс для цифрового аудио с fractional rate control,LPC1769_68_67_66_65_64_63,2,audio,medium
+Сколько GPIO у LPC1769?,70 GPIO с configurable pull-up/down и open-drain,LPC1769_68_67_66_65_64_63,2,gpio,medium
+Какой диапазон питания у LPC1769?,3.3V single supply (2.4V ~ 3.6V),LPC1769_68_67_66_65_64_63,3,power,easy
+Какие режимы пониженного потребления у LPC1769?,"Sleep, Deep-sleep, Power-down, Deep power-down",LPC1769_68_67_66_65_64_63,3,power,medium
+Какой диапазон кварца поддерживает LPC1769?,1 МГц ~ 25 МГц,LPC1769_68_67_66_65_64_63,3,clock,medium
+Какая точность внутреннего RC осциллятора у LPC1769?,4 МГц trimmed to 1%,LPC1769_68_67_66_65_64_63,3,clock,hard
+Есть ли у LPC1769 уникальный серийный номер?,"Да, unique device serial number",LPC1769_68_67_66_65_64_63,3,security,easy
+Какие корпуса доступны для LPC1769?,"LQFP100, TFBGA100, WLCSP100",LPC1769_68_67_66_65_64_63,3,package,medium
+Сколько ядер Cortex-A76 в RK3588?,4 ядра Cortex-A76,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cpu,easy
+Сколько ядер Cortex-A55 в RK3588?,4 ядра Cortex-A55,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cpu,easy
+Какой объём L3 кэша в RK3588?,3 МБ общего L3 кэша,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cache,medium
+Какой объём L2 кэша у Cortex-A76 в RK3588?,512 КБ L2 на каждое ядро A76,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cache,medium
+Какой объём L2 кэша у Cortex-A55 в RK3588?,128 КБ L2 на каждое ядро A55,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cache,medium
+Какой объём L1 кэша у Cortex-A76 в RK3588?,64 КБ L1 instruction + 64 КБ L1 data,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cache,hard
+Какой объём L1 кэша у Cortex-A55 в RK3588?,32 КБ L1 instruction + 32 КБ L1 data,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cache,hard
+Какие типы памяти поддерживает RK3588?,LPDDR4/LPDDR4X/LPDDR5,Rockchip_RK3588_Datasheet_V1.6-20231016,7,memory,medium
+Какой максимальный объём памяти поддерживает RK3588?,До 32 ГБ,Rockchip_RK3588_Datasheet_V1.6-20231016,7,memory,medium
+Сколько каналов памяти у RK3588?,4 канала по 16 бит,Rockchip_RK3588_Datasheet_V1.6-20231016,7,memory,hard
+Какой видеодекодер есть в RK3588?,"H.265/VP9 8K@60fps, H.264 8K@30fps, AV1 4K@60fps",Rockchip_RK3588_Datasheet_V1.6-20231016,6,video,medium
+Какой видеоэнкодер есть в RK3588?,H.264 и H.265 до 8K@30fps,Rockchip_RK3588_Datasheet_V1.6-20231016,6,video,medium
+Какие версии OpenGL поддерживает GPU в RK3588?,"OpenGL ES 1.1, 2.0, 3.2",Rockchip_RK3588_Datasheet_V1.6-20231016,6,gpu,medium
+Поддерживает ли RK3588 Vulkan?,"Да, Vulkan 1.2",Rockchip_RK3588_Datasheet_V1.6-20231016,6,gpu,medium
+Поддерживает ли RK3588 OpenCL?,"Да, OpenCL до 2.2",Rockchip_RK3588_Datasheet_V1.6-20231016,6,gpu,medium
+Какая производительность NPU в RK3588?,До 6 TOPs,Rockchip_RK3588_Datasheet_V1.6-20231016,6,npu,medium
+Какие форматы данных поддерживает NPU в RK3588?,INT4/INT8/INT16/FP16 hybrid operation,Rockchip_RK3588_Datasheet_V1.6-20231016,6,npu,hard
+Какие фреймворки ML поддерживает RK3588?,"TensorFlow, MXNet, PyTorch, Caffe",Rockchip_RK3588_Datasheet_V1.6-20231016,6,npu,medium
+Какое разрешение ISP в RK3588?,До 48 мегапикселей,Rockchip_RK3588_Datasheet_V1.6-20231016,6,isp,medium
+Какие алгоритмы обработки изображений есть в ISP RK3588?,"HDR, 3A, LSC, 3DNR, 2DNR, sharpening, dehaze, fisheye correction, gamma correction",Rockchip_RK3588_Datasheet_V1.6-20231016,6,isp,hard
+Сколько доменов питания для CPU в RK3588?,8 отдельных доменов для CPU ядер,Rockchip_RK3588_Datasheet_V1.6-20231016,6,power,hard
+Поддерживает ли RK3588 Trustzone?,"Да, Trustzone technology support",Rockchip_RK3588_Datasheet_V1.6-20231016,6,security,medium
+Какие криптографические расширения есть в RK3588?,ARMv8 Cryptography Extensions,Rockchip_RK3588_Datasheet_V1.6-20231016,6,security,hard
+Сколько MCU Cortex-M0 в RK3588?,3 MCU Cortex-M0,Rockchip_RK3588_Datasheet_V1.6-20231016,7,mcu,hard
+Какой eMMC стандарт поддерживает RK3588?,eMMC 5.1 с поддержкой HS400,Rockchip_RK3588_Datasheet_V1.6-20231016,7,storage,medium
+Какой SD стандарт поддерживает RK3588?,"SD3.0, MMC ver4.51",Rockchip_RK3588_Datasheet_V1.6-20231016,7,storage,medium
+Откуда может загружаться RK3588?,"SPI, eMMC, SD/MMC интерфейсы",Rockchip_RK3588_Datasheet_V1.6-20231016,7,boot,medium
+Какая разрядность АЦП у STM32F10x?,12-бит,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,215,adc,easy
+Какой внутренний источник тактирования у STM32F10x?,HSI - 8 МГц внутренний RC,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,95,clock,medium
+Что такое bit banding в STM32F10x?,Технология атомарного доступа к отдельным битам в памяти,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,53,memory,hard
+Что такое CSS в STM32F10x?,Clock Security System - система безопасности тактирования,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,97,clock,hard
+Какие режимы пониженного потребления есть у STM32F10x?,"Sleep, Stop, Standby",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,72,power,medium
+Что такое PVD в STM32F10x?,Programmable Voltage Detector - программируемый детектор напряжения,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,70,power,hard
+Сколько backup регистров в STM32F10x?,До 42 backup регистров по 16 бит,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,83,rtc,hard
+Что такое Tamper detection в STM32F10x?,Детектор вскрытия - при срабатывании очищает backup регистры,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,82,security,hard
+Какие внешние источники тактирования у STM32F10x?,HSE - 4-16 МГц внешний кристалл или генератор,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,94,clock,medium
+Что такое LSE в STM32F10x?,Low Speed External - 32.768 кГц кристалл для RTC,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,96,clock,medium
+Что такое LSI в STM32F10x?,Low Speed Internal - ~40 кГц внутренний RC для watchdog и RTC,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,96,clock,medium
+Сколько внешних прерываний у STM32F10x?,До 19 линий внешних прерываний,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,207,interrupts,medium
+Какие типы сброса есть у STM32F10x?,"System reset, Power reset, Backup domain reset",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,90,reset,hard
+Что вызывает Power reset в STM32F10x?,"Power-on/power-down reset (POR/PDR), выход из Standby режима",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,91,reset,hard
+Какой полином использует CRC в STM32F10x?,CRC-32 (Ethernet) polynomial: 0x4C11DB7,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,63,crc,hard
+Какие режимы работы ADC есть в STM32F10x?,"Single conversion, Continuous conversion, Scan mode, Discontinuous mode",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,219,adc,medium
+Что такое Injected channels в ADC STM32F10x?,"Приоритетные каналы АЦП, которые могут прерывать обычную последовательность преобразования",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,221,adc,hard
+Что такое Analog watchdog в STM32F10x?,Аппаратный монитор значений АЦП с программируемыми порогами,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,220,adc,hard
+Какой встроенный датчик температуры есть в STM32F10x?,Temperature sensor подключён к каналу ADC1_IN16,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,235,sensors,medium
+Какие режимы работы DAC есть в STM32F10x?,"Normal mode, Noise generation, Triangle wave generation",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,259,dac,medium
+Какие типы GPIO конфигурации есть у STM32F10x?,"Input floating, Input pull-up/down, Analog, Output push-pull/open-drain, Alternate function push-pull/open-drain",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,159,gpio,medium
+Что такое GPIO locking в STM32F10x?,Механизм блокировки конфигурации GPIO до следующего сброса,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,162,gpio,hard
+Что такое AFIO remap в STM32F10x?,Переназначение альтернативных функций на другие пины,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,175,gpio,hard
+Какая архитектура шин у STM32F10x?,"AHB/APB с несколькими мастерами: CPU, DMA1, DMA2",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,47,architecture,hard
+Что такое ART Accelerator в STM32F4?,Adaptive Real-Time memory accelerator для zero wait-state доступа к Flash на полной частоте,stm32f407vg,1,performance,hard
+Какой размер CCM в STM32F407?,64 КБ Core Coupled Memory для быстрого доступа CPU,stm32f407vg,1,memory,hard
+Что такое MPU в ARM Cortex-M?,Memory Protection Unit - блок защиты памяти с поддержкой до 8 регионов,LPC1769_68_67_66_65_64_63,1,security,medium
+Что такое NVIC?,Nested Vectored Interrupt Controller - встроенный контроллер прерываний в Cortex-M,LPC1769_68_67_66_65_64_63,1,interrupts,medium
+Какие классы Bluetooth передатчика поддерживает ESP32?,"Class-1, class-2 и class-3",esp32-wroom-32_datasheet_en,6,bluetooth,hard
+Какие strapping pins есть у ESP32?,"GPIO0, GPIO2, GPIO12, GPIO15 и другие для настройки boot mode",esp32-wroom-32_datasheet_en,10,boot,hard
+Какая flash endurance у ESP32-WROOM-32?,"Более 100,000 циклов program/erase, более 20 лет хранения данных",esp32-wroom-32_datasheet_en,6,memory,hard
+Какой интерфейс TWAI есть у ESP32?,"Two-Wire Automotive Interface, совместимый с ISO11898-1 (CAN 2.0)",esp32-wroom-32_datasheet_en,6,interfaces,hard
+Какие dual ADC режимы есть у STM32F10x?,"Injected simultaneous, Regular simultaneous, Fast/Slow interleaved, Alternate trigger",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,228,adc,hard
+Что такое DynamIQ в RK3588?,DSU (DynamIQ Shared Unit) - блок совместного использования L3 кэша и контроля для big.LITTLE конфигурации,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cpu,hard
+Сколько изолированных voltage domains для DVFS в RK3588?,"3 домена: A76_0+A76_1, A76_2+A76_3, DSU+A55",Rockchip_RK3588_Datasheet_V1.6-20231016,6,power,hard
+Какой FSPI интерфейс есть в RK3588?,Flexible Serial Flash Interface с поддержкой 1/2/4 bit и 2 chip select,Rockchip_RK3588_Datasheet_V1.6-20231016,7,storage,hard
+Какой объём TCM у MCU в VD_NPU в RK3588?,64 КБ TCM + 16 КБ Cache,Rockchip_RK3588_Datasheet_V1.6-20231016,7,mcu,hard
+Какой диапазон напряжения V_BAT для backup domain у STM32?,1.65V ~ 3.6V для питания RTC и backup регистров,stm32f407vg,1,power,hard
+Как работает Wake-up Interrupt Controller (WIC) в LPC1769?,WIC позволяет выходить из deep sleep/power-down по любому приоритетному прерыванию когда тактирование остановлено,LPC1769_68_67_66_65_64_63,3,power,hard
+Какие источники могут разбудить LPC1769 из Power-down?,"External interrupts, RTC, USB activity, Ethernet wake-up, CAN bus activity, Port 0/2 pin interrupt, NMI",LPC1769_68_67_66_65_64_63,3,power,hard
+Какой Brownout detector есть у LPC1769?,Brownout detect с отдельными порогами для прерывания и принудительного сброса,LPC1769_68_67_66_65_64_63,3,power,hard
+Какая функция Clock output есть у LPC1769?,"Вывод на пин main oscillator, IRC, RTC clock, CPU clock или USB clock",LPC1769_68_67_66_65_64_63,3,clock,hard
+Что такое split APB bus в LPC1769?,Разделённая APB шина для высокой пропускной способности между CPU и DMA с минимальными задержками,LPC1769_68_67_66_65_64_63,2,architecture,hard
+Какой multilayer AHB matrix есть в LPC1769?,"AHB matrix с отдельными шинами для CPU, DMA, Ethernet MAC, USB без задержек арбитража",LPC1769_68_67_66_65_64_63,2,architecture,hard
+Какие LFSR режимы есть у DAC в STM32F10x?,DAC может генерировать псевдослучайный шум с разными масками LFSR амплитуды,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,259,dac,hard
+Какая максимальная скорость I2C у LPC1769 в Fast mode plus?,1 Мбит/с,LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Какие SSP контроллеры есть у LPC1769?,"2 SSP с FIFO и multi-protocol capabilities, совместимые с SPI/Microwire/TI SSI",LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Какой Repetitive interrupt timer есть у LPC1769?,Repetitive interrupt timer для программируемых повторяющихся прерываний,LPC1769_68_67_66_65_64_63,3,timers,hard
+Есть ли у каждой периферии LPC1769 свой делитель тактовой частоты?,"Да, каждая периферия имеет свой clock divider для экономии энергии",LPC1769_68_67_66_65_64_63,3,power,hard
+Какие режимы I2S поддерживает LPC1769?,"3-wire и 4-wire transmit/receive, master clock input/output",LPC1769_68_67_66_65_64_63,2,audio,hard
+Какой ETM есть у LPC1769?,Emulation trace module для non-intrusive high-speed real-time instruction tracing,LPC1769_68_67_66_65_64_63,3,debug,hard
+Какой интегрированный PMU есть у LPC1769?,Power Management Unit автоматически регулирует внутренние регуляторы для минимизации потребления,LPC1769_68_67_66_65_64_63,3,power,hard
+Какой SPI интерфейс у LPC1769?,SPI controller с synchronous full duplex communication и programmable data length,LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Какой prefetch unit есть у Cortex-M3 в LPC1769?,Internal prefetch unit с поддержкой speculative branching,LPC1769_68_67_66_65_64_63,1,cpu,hard
+Какая Harvard архитектура у Cortex-M3?,3-stage pipeline с separate local instruction и data buses плюс third bus для периферии,LPC1769_68_67_66_65_64_63,1,architecture,hard
+Какой flash accelerator есть у LPC1769?,Enhanced flash memory accelerator для zero wait states на 120 МГц,LPC1769_68_67_66_65_64_63,1,memory,hard
+Поддерживает ли LPC1769 ISP и IAP?,"Да, In-System Programming и In-Application Programming через on-chip bootloader",LPC1769_68_67_66_65_64_63,1,boot,medium
+Что такое CRP у LPC1769?,Code Read Protection с разными уровнями безопасности,LPC1769_68_67_66_65_64_63,3,security,hard
+Какой DCMI интерфейс у STM32F407?,Digital Camera Interface 8-14 bit parallel до 54 Mbytes/s,stm32f407vg,1,interfaces,medium
+Какой IEEE 1588v2 поддерживает STM32F407?,Hardware support для IEEE 1588v2 Precision Time Protocol в Ethernet MAC,stm32f407vg,1,interfaces,hard
+Какой FSMC есть у STM32F407?,"Flexible Static Memory Controller для Compact Flash, SRAM, PSRAM, NOR и NAND memories",stm32f407vg,1,memory,hard
+Какой LCD интерфейс у STM32F407?,LCD parallel interface в режимах 8080/6800,stm32f407vg,1,interfaces,medium
+Какой spread spectrum clock generation есть у STM32F407?,PLL SSCG для снижения EMI,stm32f407vg,4,clock,hard
+Какие ULPI функции у STM32F407?,"USB 2.0 high-speed OTG с dedicated DMA, on-chip full-speed PHY и ULPI интерфейс",stm32f407vg,1,usb,hard
+Какой IrDA интерфейс у STM32F407?,UART с поддержкой IrDA SIR ENDEC,stm32f407vg,1,interfaces,medium
+Какой RS-485 интерфейс у STM32F407?,UART с RS-485/EIA-485 support и driver enable,stm32f407vg,1,interfaces,hard
+Какой modem control есть у UART STM32F407?,"Один UART с полным modem control (CTS, RTS, DTR, DSR, RI, DCD)",stm32f407vg,1,interfaces,hard
+Какие SPI скорости у STM32F407?,До 42 Mbits/s на SPI интерфейсах,stm32f407vg,1,interfaces,medium
+Какой audio PLL есть у STM32F407?,PLLI2S для генерации точных audio частот для I2S,stm32f407vg,1,audio,hard
+Какой I2S интерфейс у STM32F407?,2 SPI с muxed full-duplex I2S для audio class accuracy через PLLI2S или external clock,stm32f407vg,1,audio,hard
+Какие ISO 7816 функции у STM32F407?,USART с поддержкой ISO 7816 smart card interface,stm32f407vg,1,interfaces,hard
+Какой triple interleaved mode у ADC STM32F407?,3 ADC в triple interleaved mode дают до 7.2 MSPS,stm32f407vg,1,adc,hard
+Какой quadrature encoder interface у LPC1769?,QEI для мониторинга внешнего квадратурного энкодера,LPC1769_68_67_66_65_64_63,2,peripherals,medium
+Какой motor control PWM у LPC1769?,MCPWM с поддержкой трёхфазного управления двигателем,LPC1769_68_67_66_65_64_63,2,pwm,medium
+Какой standard PWM у LPC1769?,Один standard PWM/timer block с external count input,LPC1769_68_67_66_65_64_63,2,pwm,medium
+Какой RTC oscillator у LPC1769?,RTC с отдельным power domain и dedicated RTC oscillator 32.768 кГц,LPC1769_68_67_66_65_64_63,2,rtc,medium
+Сколько backup регистров у RTC LPC1769?,20 байт battery-powered backup регистров,LPC1769_68_67_66_65_64_63,2,rtc,hard
+Какой WDT clock source у LPC1769?,"WDT может тактироваться от internal RC, RTC oscillator или APB clock",LPC1769_68_67_66_65_64_63,3,watchdog,hard
+Какой system tick timer у LPC1769?,Cortex-M3 system tick timer с external clock input option,LPC1769_68_67_66_65_64_63,3,timers,medium
+Какие edge/level sensitive прерывания у LPC1769?,"4 external interrupt inputs, все пины Port 0 и Port 2 для edge sensitive interrupts",LPC1769_68_67_66_65_64_63,3,interrupts,hard
+Какой NMI у LPC1769?,Non-Maskable Interrupt input для критических событий,LPC1769_68_67_66_65_64_63,3,interrupts,medium
+Какой USB PLL у LPC1769?,Отдельный USB PLL для гибкости генерации USB clock,LPC1769_68_67_66_65_64_63,3,clock,hard
+Какой RTC calibration есть у STM32F10x?,BKP_RTCCR регистр с 7-bit calibration value для точной настройки RTC,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,82,rtc,hard
+Какой atomic bit set/reset есть у GPIO STM32F10x?,GPIOx_BSRR регистр для атомарного set/reset отдельных битов,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,161,gpio,hard
+Какие external wakeup lines есть у STM32F10x?,EXTI lines для wakeup из Stop mode через GPIO или внутренние события,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,162,power,hard
+Какой channel-by-channel sample time у ADC STM32F10x?,Programmable sample time для каждого канала от 1.5 до 239.5 cycles,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,225,adc,hard
+Какой data alignment у ADC STM32F10x?,Left или right alignment 12-bit данных в 16-bit регистре,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,224,adc,medium
+Какой ADC calibration есть у STM32F10x?,"Self-calibration для компенсации ошибок, должна выполняться после каждого power-on",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,223,adc,hard
+Какие external trigger sources у ADC STM32F10x?,"Timer events (TIM1/2/3/4/8), EXTI line 11, software trigger",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,225,adc,hard
+Какой DMA request у ADC STM32F10x?,ADC1 и ADC3 могут генерировать DMA requests после каждого преобразования,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,227,adc,hard
+Какой DAC output buffer есть у STM32F10x?,Optional output buffer для увеличения drive capability на выходе DAC,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,256,dac,hard
+Какая формула DAC output voltage у STM32F10x?,DAC_output = V_REF * (DOR / 4096),rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,258,dac,hard
+Какие DAC trigger sources у STM32F10x?,"Timer TRGO events, EXTI line 9, software trigger",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,258,dac,hard
+Какой dual DAC mode есть у STM32F10x?,Simultaneous update обоих DAC каналов одной командой,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,261,dac,hard
+Какой DMA request у DAC STM32F10x?,DAC channels могут генерировать DMA requests при underrun или по trigger,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,259,dac,hard
+Какой AFH есть у Bluetooth в ESP32?,Adaptive Frequency Hopping для устойчивости к помехам,esp32-wroom-32_datasheet_en,6,bluetooth,hard
+Какой guard interval у Wi-Fi ESP32?,0.4µs guard interval support,esp32-wroom-32_datasheet_en,6,wifi,hard
+Какой A-MPDU/A-MSDU aggregation у ESP32?,A-MPDU и A-MSDU aggregation для увеличения throughput,esp32-wroom-32_datasheet_en,6,wifi,hard
+Какие capacitive touch sensors есть у ESP32?,Capacitive touch sensor inputs для touch-based интерфейсов,esp32-wroom-32_datasheet_en,6,sensors,medium
+Какой pulse counter есть у ESP32?,Pulse counter для подсчёта импульсов от внешних источников,esp32-wroom-32_datasheet_en,6,peripherals,medium
+Какой LED PWM есть у ESP32?,LED PWM controller для управления яркостью светодиодов,esp32-wroom-32_datasheet_en,6,pwm,medium
+Какой Motor PWM есть у ESP32?,Motor PWM controller для управления двигателями,esp32-wroom-32_datasheet_en,6,pwm,medium
+Какой IR remote control есть у ESP32?,IR remote control transmitter/receiver,esp32-wroom-32_datasheet_en,6,peripherals,medium
+Какие RTC memory domains у ESP32?,"RTC memory сохраняется в deep sleep, есть RTC fast и RTC slow memory",esp32-wroom-32_datasheet_en,6,memory,hard
+Какой ULP coprocessor есть у ESP32?,Ultra Low Power coprocessor для задач в deep sleep режиме,esp32-wroom-32_datasheet_en,6,power,hard
+Какие NZI receiver характеристики у ESP32 Bluetooth?,Near Zero IF receiver с -97dBm sensitivity,esp32-wroom-32_datasheet_en,6,bluetooth,hard
+Какой ESD protection у ESP32-WROOM-32?,Electrostatic discharge protection по HBM и CDM стандартам,esp32-wroom-32_datasheet_en,22,esd,hard
+Какой reflow profile у ESP32-WROOM-32?,Standard lead-free reflow profile с peak temperature около 250°C,esp32-wroom-32_datasheet_en,22,manufacturing,hard
+Какой объём SRAM у чипа ESP32 (в составе ESP32-WROOM-32)?,520 КБ SRAM,esp32-wroom-32_datasheet_en,6,memory,medium
+Какой объём ROM у чипа ESP32?,448 КБ ROM,esp32-wroom-32_datasheet_en,6,memory,hard
+Сколько UART контроллеров доступно на ESP32?,3 UART,esp32-wroom-32_datasheet_en,6,interfaces,easy
+Сколько SAR ADC модулей есть в ESP32?,2 SAR ADC (ADC1 и ADC2),esp32-wroom-32_datasheet_en,6,adc,easy
+Сколько аналоговых каналов ADC доступно на ESP32 (суммарно ADC1+ADC2)?,До 18 каналов ADC,esp32-wroom-32_datasheet_en,6,adc,hard
+Какая разрядность и количество каналов DAC у ESP32?,2 × 8-bit DAC,esp32-wroom-32_datasheet_en,6,dac,easy
+Сколько каналов ёмкостного touch-сенсора поддерживает ESP32?,До 10 каналов capacitive touch,esp32-wroom-32_datasheet_en,6,sensors,medium
+Какие режимы Wi-Fi поддерживает ESP32?,"Station (STA), SoftAP, Station+SoftAP",esp32-wroom-32_datasheet_en,6,wifi,medium
+Поддерживает ли ESP32 одновременную работу Wi-Fi и Bluetooth?,"Да, поддерживается co-existence Wi-Fi + BT/BLE",esp32-wroom-32_datasheet_en,6,radio,medium
+Какая максимальная мощность передачи Wi-Fi у ESP32?,"До +20 dBm (типично, зависит от режима/скорости)",esp32-wroom-32_datasheet_en,6,wifi,medium
+Сколько GPIO линий доступно у ESP32 (на уровне чипа)?,До 34 программируемых GPIO (часть может быть input-only),esp32-wroom-32_datasheet_en,6,gpio,medium
+Являются ли GPIO ESP32 5V-tolerant?,"Нет, логические уровни 3.3V (не 5V-tolerant)",esp32-wroom-32_datasheet_en,6,gpio,medium
+Сколько 64-битных general-purpose таймеров есть в ESP32?,4 × 64-bit general-purpose timers,esp32-wroom-32_datasheet_en,6,timers,hard
+Сколько каналов аппаратного PWM (LEDC) есть в ESP32?,До 16 каналов LED PWM (LEDC),esp32-wroom-32_datasheet_en,6,pwm,medium
+Какой PWM-блок для управления двигателями есть в ESP32?,Motor PWM (MCPWM) для задач управления двигателями,esp32-wroom-32_datasheet_en,6,pwm,hard
+Какие аппаратные криптографические блоки есть у ESP32?,Аппаратные ускорители AES/SHA/RSA/ECC и TRNG,esp32-wroom-32_datasheet_en,6,security,medium
+Какой тип флеш-памяти используется в ESP32-WROOM-32 (по интерфейсу)?,SPI/QSPI flash (встроенная во многие модули),esp32-wroom-32_datasheet_en,6,memory,medium
+Какие базовые режимы загрузки есть у ESP32?,Загрузка из SPI flash и UART Download (через serial bootloader),esp32-wroom-32_datasheet_en,10,boot,medium
+Какие варианты антенны встречаются у модулей семейства ESP32-WROOM-32?,PCB-антенна (WROOM-32) или U.FL-разъём (WROOM-32U),esp32-wroom-32_datasheet_en,1,package,medium
+Есть ли у ESP32-WROOM-32 экранирование RF-части?,"Да, модуль имеет металлический экранирующий кожух",esp32-wroom-32_datasheet_en,1,package,easy
+Сколько SPI интерфейсов есть у STM32F407?,До 3 SPI,stm32f407vg,1,interfaces,easy
+Сколько I2S интерфейсов возможно в STM32F407 (через SPI)?,До 2 I2S (SPI2 и SPI3),stm32f407vg,1,audio,medium
+Какие USB контроллеры есть в STM32F407?,USB OTG FS и USB OTG HS (device/host/OTG),stm32f407vg,1,usb,medium
+Нужен ли внешний PHY для USB OTG HS в STM32F407?,"Да, HS работает через ULPI (встроенный PHY — только для FS)",stm32f407vg,1,usb,hard
+Какой Ethernet блок есть в STM32F407?,10/100 Ethernet MAC с поддержкой IEEE 1588v2,stm32f407vg,1,interfaces,medium
+Есть ли у STM32F407 интерфейс камеры и какие у него характеристики?,"Да, DCMI 8–14 бит, до ~54 Mbytes/s",stm32f407vg,1,interfaces,medium
+Сколько DMA контроллеров в STM32F407?,2 DMA контроллера (DMA1 и DMA2),stm32f407vg,1,dma,hard
+Какой тип FPU у Cortex-M4 в STM32F407?,Аппаратный FPU одинарной точности (single-precision),stm32f407vg,1,cpu,medium
+Какой CRC блок есть в STM32F407?,CRC calculation unit,stm32f407vg,1,peripherals,easy
+Какой контроллер внешней памяти есть в STM32F407?,FSMC для SRAM/PSRAM/NOR/NAND/CompactFlash,stm32f407vg,1,memory,hard
+Сколько SSP контроллеров есть в LPC1769?,2 SSP контроллера,LPC1769_68_67_66_65_64_63,2,interfaces,easy
+Есть ли отдельный (legacy) SPI контроллер в LPC1769 помимо SSP?,"Да, есть отдельный SPI controller",LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Какой аудио интерфейс есть в LPC1769?,I2S интерфейс для цифрового аудио,LPC1769_68_67_66_65_64_63,2,audio,medium
+Какой USB интерфейс у LPC1769?,USB 2.0 full-speed Device/Host/OTG с on-chip PHY,LPC1769_68_67_66_65_64_63,2,usb,medium
+Какой Ethernet интерфейс у LPC1769?,Ethernet MAC с RMII и выделенным DMA,LPC1769_68_67_66_65_64_63,2,interfaces,medium
+Сколько внешних прерываний EINT есть в LPC1769?,4 external interrupt inputs,LPC1769_68_67_66_65_64_63,3,interrupts,medium
+Какая разрядность и количество таймеров общего назначения в LPC1769?,4 таймера/счётчика общего назначения (32-bit),LPC1769_68_67_66_65_64_63,2,timers,medium
+Какие источники тактирования watchdog (WDT) есть у LPC1769?,"Internal RC, RTC oscillator или APB clock",LPC1769_68_67_66_65_64_63,3,watchdog,hard
+Какую роль выполняет встроенный PMU в LPC1769?,PMU автоматически регулирует внутренние регуляторы для снижения потребления,LPC1769_68_67_66_65_64_63,3,power,hard
+Поддерживает ли LPC1769 ISP/IAP и как это используется?,"Да, ISP/IAP через on-chip bootloader",LPC1769_68_67_66_65_64_63,1,boot,medium
+Какая CPU архитектура у RK3588?,64-bit ARMv8-A big.LITTLE: Cortex-A76 + Cortex-A55,Rockchip_RK3588_Datasheet_V1.6-20231016,6,cpu,medium
+Какие форматы данных поддерживает NPU RK3588?,INT4/INT8/INT16/FP16 hybrid operation,Rockchip_RK3588_Datasheet_V1.6-20231016,6,npu,hard
+Сколько каналов памяти у RK3588 и какая разрядность?,4 канала памяти по 16 бит,Rockchip_RK3588_Datasheet_V1.6-20231016,7,memory,hard
+Поддерживает ли RK3588 Vulkan?,"Да, Vulkan 1.2",Rockchip_RK3588_Datasheet_V1.6-20231016,6,gpu,medium
+Откуда может загружаться RK3588?,"SPI, eMMC, SD/MMC интерфейсы",Rockchip_RK3588_Datasheet_V1.6-20231016,7,boot,medium
+Что такое EXTI в STM32F10x?,Контроллер внешних прерываний/событий: маршрутизация линий (GPIO/внутренние) к NVIC,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,207,interrupts,medium
+Что означает Standby mode в STM32F10x?,"Глубокий режим энергосбережения: минимальное потребление, пробуждение по WKUP/RTC/EXTI; SRAM не сохраняется",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,72,power,hard
+Что такое backup domain в STM32F10x?,"Область питания V_BAT для RTC и backup-регистров, сохраняет данные при отключении основного питания",rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,82,rtc,medium
+Что такое POR/PDR (power-on/power-down reset) в STM32F10x?,Сброс при включении/падении питания (POR/PDR) и при выходе из Standby как часть power reset,rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics,91,reset,medium

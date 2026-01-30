@@ -1,0 +1,39 @@
+# Python venv
+.venv/
+
+# Local assistant configs
+.claude/
+
+# Env files
+.env
+
+# Logs
+*.log
+__pycache__/
+*.pyc
+
+# Results / artifacts
+results/
+results.zip
+
+# Indexes / generated data
+data/index/
+data/processed/
+
+# Raw datasets (PDFs, etc.)
+data/raw/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.tbz2
+*.tar.xz
+*.txz
+*.7z
+*.rar
+
+# Office documents
+*.docx
