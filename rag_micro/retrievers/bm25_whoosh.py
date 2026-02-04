@@ -5,6 +5,7 @@ from whoosh import index
 from whoosh.fields import Schema, TEXT, ID, NUMERIC
 from whoosh.qparser import MultifieldParser
 from whoosh.analysis import StemmingAnalyzer
+from whoosh import qparser
 from tqdm import tqdm
 
 _INDEX_CACHE: dict[str, index.Index] = {}
@@ -42,7 +43,7 @@ def search_whoosh(index_dir: str, query: str, k: int = 5) -> List[Dict]:
     if ix is None:
         ix = index.open_dir(index_dir)
         _INDEX_CACHE[index_dir] = ix
-    parser = MultifieldParser(["text", "doc"], schema=ix.schema)
+    parser = MultifieldParser(["text", "doc"], schema=ix.schema, group=qparser.OrGroup)
     q = parser.parse(query)
     out = []
     with ix.searcher() as s:
