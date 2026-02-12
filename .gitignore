@@ -21,7 +21,9 @@ data/index/
 data/processed/
 
 # Raw datasets (PDFs, etc.)
-data/raw/
+data/*
+!data/benchmark
+index_test
 
 # Archives
 *.zip
@@ -37,3 +39,6 @@ data/raw/
 
 # Office documents
 *.docx
+
+# Experiments results
+experiments/session_*
